@@ -1,0 +1,14 @@
+/*мертвая страница*/
+.universal {
+    border: skyblue solid 1px;
+    padding: 10px;
+}
+
+.error {
+    border: red 1px solid;
+    padding: 10px;
+}
+
+.error-message {
+    color: red;
+}

@@ -1,0 +1,36 @@
+.wrapper{
+      background-color: skyblue;
+    width: 98vw;
+    height: 98vw;
+}
+
+.telega{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    left: 360px;
+    top: 100px;
+    background-color: white;
+    width:400px;
+    height: 600px;
+}
+
+.class1 {
+    /*width:20vw;*/
+    /*word-wrap: break-word;*/
+    color: red;
+}
+
+.class2 {
+    color: black;
+}
+
+table{
+    margin-left: 50px;
+    width: 300px;
+}
+table td {
+    width: 100px;
+
+}
