@@ -13,9 +13,14 @@ export const Menu = (props: callBackType) => {
         setOn(OnValue)
     }
 
+    function callBackHandler(){
+        props.callBack();
+        setOn(null)
+    }
+
     return (
         <div>
-            <NavLink exact to={'/'}>  <button onClick={props.callBack} className={style.Menu}>Menu</button></NavLink>
+            <NavLink exact to={'/'}>  <button  onClick={callBackHandler} className={style.Menu}>Menu</button></NavLink>
             {props.opacity && <NavLink to={'/monday'}>
                 <button onClick={()=>onOff('Monday')} className={on==='Monday'? style.MondayACtive:style.Monday}>Monday</button>
             </NavLink>}
