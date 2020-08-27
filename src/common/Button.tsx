@@ -1,14 +1,15 @@
 import React from "react";
-import './Button.styles.css'
+import styles from './Button.module.css'
 
 type ButtonPropsType = {
     title: string
     callback: () => void
+    Filter?:string
 }
 
 export const Button = (props:ButtonPropsType) => {
     return (
-        <button className={props.title==='delete'?'orangeButton': 'universalButton'}
+        <button className={props.Filter==props.title? styles.colorFilter:styles.universalButton}
                 onClick={props.callback}>{props.title}</button>
     )
 }

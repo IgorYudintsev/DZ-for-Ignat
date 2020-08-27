@@ -8,6 +8,10 @@
     padding: 10px;
 }
 
+.normal{
+    padding: 10px;
+}
+
 .error-message {
     color: red;
 }

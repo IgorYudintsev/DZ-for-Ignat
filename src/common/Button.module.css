@@ -7,3 +7,8 @@
     border: orangered solid 1px;
     padding: 10px;
 }
+
+.colorFilter{
+    background-color: yellow;
+    padding: 10px;
+}
