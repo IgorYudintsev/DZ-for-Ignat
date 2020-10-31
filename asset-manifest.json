@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/DZ-for-Ignat/static/css/main.9a91b69d.chunk.css",
-    "main.js": "/DZ-for-Ignat/static/js/main.921e4c37.chunk.js",
-    "main.js.map": "/DZ-for-Ignat/static/js/main.921e4c37.chunk.js.map",
+    "main.css": "/DZ-for-Ignat/static/css/main.9cee2606.chunk.css",
+    "main.js": "/DZ-for-Ignat/static/js/main.00d2ad21.chunk.js",
+    "main.js.map": "/DZ-for-Ignat/static/js/main.00d2ad21.chunk.js.map",
     "runtime-main.js": "/DZ-for-Ignat/static/js/runtime-main.308d4e60.js",
     "runtime-main.js.map": "/DZ-for-Ignat/static/js/runtime-main.308d4e60.js.map",
-    "static/js/2.a0205870.chunk.js": "/DZ-for-Ignat/static/js/2.a0205870.chunk.js",
-    "static/js/2.a0205870.chunk.js.map": "/DZ-for-Ignat/static/js/2.a0205870.chunk.js.map",
+    "static/js/2.79bea035.chunk.js": "/DZ-for-Ignat/static/js/2.79bea035.chunk.js",
+    "static/js/2.79bea035.chunk.js.map": "/DZ-for-Ignat/static/js/2.79bea035.chunk.js.map",
     "index.html": "/DZ-for-Ignat/index.html",
-    "precache-manifest.f9100f3172523fe90b47c62026dd69ef.js": "/DZ-for-Ignat/precache-manifest.f9100f3172523fe90b47c62026dd69ef.js",
+    "precache-manifest.a80149ebed1b4f7e0f8fda64b73e6925.js": "/DZ-for-Ignat/precache-manifest.a80149ebed1b4f7e0f8fda64b73e6925.js",
     "service-worker.js": "/DZ-for-Ignat/service-worker.js",
-    "static/css/main.9a91b69d.chunk.css.map": "/DZ-for-Ignat/static/css/main.9a91b69d.chunk.css.map",
-    "static/js/2.a0205870.chunk.js.LICENSE.txt": "/DZ-for-Ignat/static/js/2.a0205870.chunk.js.LICENSE.txt"
+    "static/css/main.9cee2606.chunk.css.map": "/DZ-for-Ignat/static/css/main.9cee2606.chunk.css.map",
+    "static/js/2.79bea035.chunk.js.LICENSE.txt": "/DZ-for-Ignat/static/js/2.79bea035.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.308d4e60.js",
-    "static/js/2.a0205870.chunk.js",
-    "static/css/main.9a91b69d.chunk.css",
-    "static/js/main.921e4c37.chunk.js"
+    "static/js/2.79bea035.chunk.js",
+    "static/css/main.9cee2606.chunk.css",
+    "static/js/main.00d2ad21.chunk.js"
   ]
 }
