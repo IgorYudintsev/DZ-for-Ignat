@@ -159,19 +159,38 @@ function App() {
     //for TODOLIST------------selectComponent
     let arraySkills = [
         {
-            value: 1,
-            skills: 'Junior'
+            id: 1,
+            skills: 'Junior',
+            color: '  yellowgreen'
         },
         {
-            value: 2,
-            skills: 'Middle'
+            id: 2,
+            skills: 'Middle',
+            color: '  navajowhite'
         },
         {
-            value: 3,
-            skills: 'Senior'
+            id: 3,
+            skills: 'Senior',
+            color: '  lightskyblue'
         }
     ];
-    //for STATEreducer
+
+    let [color, setColor] = useState('lightskyblue');
+    const arraySkillsFoo = (id: number) => {
+        console.log(id);
+        if (id == 1) {
+            setColor('  yellowgreen')
+        }
+        if (id == 2) {
+            setColor('  navajowhite')
+        }
+        if (id == 3) {
+            setColor('  lightskyblue')
+        }
+
+    }
+
+    //for STATEreducer----------------------
     const startState: Array<StateType> = [
         {id: v1(), name: "Igor", age: 41},
         {id: v1(), name: "Olga", age: 39},
@@ -183,17 +202,30 @@ function App() {
     const SortAGEAC = {type: 'AGESORT', payload: 18}
 
     return (
-        <div>
+        <div className={color}>
             <div className="App">
                 <BrowserRouter>
+                    <div className={'RadioStylesForBackGround'}>
+                        <Radio
+                            arraySkills={arraySkills}
+                            title={'Please select color theme: '}
+                            arraySkillsFoo={arraySkillsFoo}
+                            setColor={true}
+                        />
+                    </div>
                     <Menu callBack={() => MenuFoo(!opacity)} opacity={opacity}/>
-                    <Route path={'/monday'} render={() => <Telegram
-                        name='Sasha'
-                        surName='Yudintsev'
-                        arQualities={filteredarQualities}
-                        Delete={Delete}
-                        changeFilter={changeFilter}
-                    />}/>
+                    <Route path={'/monday'} render={() =>
+                        <div className={'general'}>
+                            <Telegram
+                                name='Sasha'
+                                surName='Yudintsev'
+                                arQualities={filteredarQualities}
+                                Delete={Delete}
+                                changeFilter={changeFilter}
+                            />
+                        </div>
+                    }
+                    />
 
                     <Route path={'/tuesday'} render={() => {
                         return (
@@ -231,7 +263,13 @@ function App() {
                                 </div>}
                                 {!loading && show && <div className={'leftSide'}>
                                     <div className={'SelectStyles'}><Select arraySkills={arraySkills}/></div>
-                                    <div className={'RadioStyles'}><Radio arraySkills={arraySkills}/></div>
+                                    <div className={'RadioStyles'}>
+                                        <Radio
+                                            arraySkills={arraySkills}
+                                            title={'Please select your SKILL: '}
+                                            arraySkillsFoo={arraySkillsFoo}
+                                        />
+                                    </div>
                                     <div className={'ArrayState'}><ArrayState
                                         state={startState}
                                         SortUpValueForAction={SortUpValueForAction}
@@ -240,7 +278,7 @@ function App() {
                                     /></div>
                                     <div className={'timerModule'}><Timer/></div>
                                 </div>}
-                                <Range  min={200} max={300}/>
+                                <Range min={200} max={300}/>
                                 <RangeDouble min={200} max={1000}/>
                             </div>
                         )
