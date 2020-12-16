@@ -17,6 +17,9 @@ import {Button} from "./common/Button";
 import {LoadingAC, PreloaderReducer} from "./common/Preloader/PreloaderReducer";
 import {Range} from "./common/Range/Range";
 import {RangeDouble} from "./common/RangeDouble/RangeDouble";
+import {useDispatch, useSelector} from "react-redux";
+import {AppRootStateType} from "./store/store";
+import {setThemeAC} from "./reducers/ThemeReducer";
 
 type todolistsType = {
     id: string
@@ -161,12 +164,12 @@ function App() {
         {
             id: 1,
             skills: 'Junior',
-            color: '  yellowgreen'
+            color: '  dimgray'
         },
         {
             id: 2,
             skills: 'Middle',
-            color: '  navajowhite'
+            color: '  deeppink'
         },
         {
             id: 3,
@@ -174,19 +177,21 @@ function App() {
             color: '  lightskyblue'
         }
     ];
-
-    let [color, setColor] = useState('lightskyblue');
+    let color=useSelector<AppRootStateType,string>(state => state.color);
+    let dispatch=useDispatch();
+    // let [color, setColor] = useState('lightskyblue');
     const arraySkillsFoo = (id: number) => {
         console.log(id);
-        if (id == 1) {
-            setColor('  yellowgreen')
-        }
-        if (id == 2) {
-            setColor('  navajowhite')
-        }
-        if (id == 3) {
-            setColor('  lightskyblue')
-        }
+        dispatch(setThemeAC(id));
+        // if (id == 1) {
+        //     setColor('  yellowgreen')
+        // }
+        // if (id == 2) {
+        //     setColor('  navajowhite')
+        // }
+        // if (id == 3) {
+        //     setColor('  lightskyblue')
+        // }
 
     }
 
