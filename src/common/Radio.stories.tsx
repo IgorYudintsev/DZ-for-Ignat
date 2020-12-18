@@ -18,13 +18,5 @@ Primary.args = {
         {id: 3, skills: 'Senior', color: '  lightskyblue'}
     ],
      arraySkillsFoo: action('arraySkillsFoo')
-    //
-    // addTask: action('addTask'),
-    // removeTask: action('removeTask'),
-    // changeFilterTodolist: action('changeFilterTodolist'),
-    // changeStatus: action('changeStatus'),
-    // RemoveTodolist: action('RemoveTodolist'),
-    // saveNewTitle: action('saveNewTitle'),
-    // saveNewTitleTodolist: action('saveNewTitleTodolist'),
 };
 

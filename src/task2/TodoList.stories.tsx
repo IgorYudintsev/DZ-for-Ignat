@@ -7,9 +7,6 @@ import {action} from "@storybook/addon-actions";
 export default {
     title: 'Todolist/TodoList',
     component: TodoList,
-    argTypes: {
-        addTask: (description:'callBack который вызовется когда нажмем ADD') => {}
-    },
 } as Meta;
 const Template: Story<any> = (args) => <TodoList {...args}/>
 
