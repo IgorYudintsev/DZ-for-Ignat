@@ -21,7 +21,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "./store/store";
 import {setThemeAC} from "./reducers/ThemeReducer";
 
-type todolistsType = {
+export type todolistsType = {
     id: string
     title: string
     filter: string
@@ -192,7 +192,6 @@ function App() {
         // if (id == 3) {
         //     setColor('  lightskyblue')
         // }
-
     }
 
     //for STATEreducer----------------------
@@ -275,7 +274,8 @@ function App() {
                                             arraySkillsFoo={arraySkillsFoo}
                                         />
                                     </div>
-                                    <div className={'ArrayState'}><ArrayState
+                                    <div className={'ArrayState'}>
+                                        <ArrayState
                                         state={startState}
                                         SortUpValueForAction={SortUpValueForAction}
                                         SortDownValueForAction={SortDownValueForAction}
