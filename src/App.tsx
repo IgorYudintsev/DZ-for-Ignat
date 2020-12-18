@@ -179,20 +179,10 @@ function App() {
     ];
     let color=useSelector<AppRootStateType,string>(state => state.color);
     let dispatch=useDispatch();
-    // let [color, setColor] = useState('lightskyblue');
-    const arraySkillsFoo = (id: number) => {
+       const arraySkillsFoo = (id: number) => {
         console.log(id);
         dispatch(setThemeAC(id));
-        // if (id == 1) {
-        //     setColor('  yellowgreen')
-        // }
-        // if (id == 2) {
-        //     setColor('  navajowhite')
-        // }
-        // if (id == 3) {
-        //     setColor('  lightskyblue')
-        // }
-    }
+           }
 
     //for STATEreducer----------------------
     const startState: Array<StateType> = [
