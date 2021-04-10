@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c3606b1029d8a1bb4bd418998a13128",
+    "revision": "e6a2b30e3ea00d271223bdb532a8442e",
     "url": "/DZ-for-Ignat/index.html"
   },
   {
-    "revision": "4d1f89c9d9b40dfbdff5",
-    "url": "/DZ-for-Ignat/static/css/main.788e2cad.chunk.css"
+    "revision": "2b897bbca9849f5b679a",
+    "url": "/DZ-for-Ignat/static/css/main.4e4bf829.chunk.css"
   },
   {
-    "revision": "7228514b4e197f7fa9ae",
-    "url": "/DZ-for-Ignat/static/js/2.4971c255.chunk.js"
+    "revision": "216d59acd500d35bfa6f",
+    "url": "/DZ-for-Ignat/static/js/2.0bc82ef0.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/DZ-for-Ignat/static/js/2.4971c255.chunk.js.LICENSE.txt"
+    "url": "/DZ-for-Ignat/static/js/2.0bc82ef0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d1f89c9d9b40dfbdff5",
-    "url": "/DZ-for-Ignat/static/js/main.08f102b3.chunk.js"
+    "revision": "2b897bbca9849f5b679a",
+    "url": "/DZ-for-Ignat/static/js/main.0474ce43.chunk.js"
   },
   {
     "revision": "f74febbcad77abd2b480",
